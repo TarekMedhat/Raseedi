@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Raseedi</string>
     <string name="ads">Ads</string>
+    <string name="offersandextras">Offers and Extras</string>
+    <string name="details">Details</string>
+    <string name="addetails">Ad Details</string>
+    <string name="promotions">Promotions</string>
+    <string name="error_message">Something went wrong!</string>
+    <string name="retry">Retry</string>
 </resources>

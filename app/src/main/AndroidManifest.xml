@@ -2,19 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tarekmtolba.raseedi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".modules.ad.AdsActivity">
+        <activity android:name=".modules.ad.AdsActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".modules.addetails.AdDetailsActivity"
+            android:label="@string/addetails"
+            android:parentActivityName=".modules.ad.AdsActivity">
         </activity>
     </application>
 

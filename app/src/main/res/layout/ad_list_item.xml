@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="4dp"
+    android:id="@+id/ad_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:elevation="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ad_imageview"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/raseedi" />
+
+        <TextView
+            android:id="@+id/ad_title_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_imageview"
+            tools:text="title" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ad_imageview"
+            app:layout_constraintEnd_toEndOf="@+id/ad_imageview"
+            app:layout_constraintStart_toStartOf="@+id/ad_imageview"
+            app:layout_constraintTop_toTopOf="@+id/ad_imageview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
